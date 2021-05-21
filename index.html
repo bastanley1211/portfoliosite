@@ -19,12 +19,13 @@
     <details class="top" style="height:0">&nbsp;</details>
     <nav>
         <div class="navbar fixed-top navbar-light px-0 mx-0">
-            <div class="container-fluid">
+            <div class="container-fluid" id="navbarTop">
+                <h4 class="text-dark m-0 p-0 d-none" id="navbarBranding">Bethany Stanley: Web Developer</h4>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav text-left">
                         <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contactForm">Contact Me</a></li>
@@ -236,6 +237,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Smooth scroll on all devices-->
     <script>
+
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
@@ -264,6 +266,14 @@
         document.querySelector('.js-scroll-to-top').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('details').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        //make navbarBranding appear and disappear when navbar-toggler is clicked
+
+        $(document).ready(function () {
+            ($(".navbar-toggler").click(function () {
+                $("#navbarBranding").toggleClass("d-none");
+            }))
         });
 
     </script>
