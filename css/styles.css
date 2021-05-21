@@ -47,9 +47,6 @@ h4 {
 
 /* About section styles */
 
-#about {
-}
-
 #self-image {
   border-radius: 75%;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -113,13 +110,15 @@ h4 {
 
 #projectOne,
 #projectTwo,
-#projectThree {
+#projectThree,
+#projectFour {
   opacity: 0.5;
 }
 
 #projectOne:hover,
 #projectTwo:hover,
-#projectThree:hover {
+#projectThree:hover,
+#projectFour:hover {
   transition: opacity 350ms 100ms cubic-bezier(0.075, 0.82, 0.165, 1);
   opacity: 1;
 }
