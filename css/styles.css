@@ -115,14 +115,16 @@ h4 {
 #projectOne,
 #projectTwo,
 #projectThree,
-#projectFour {
+#projectFour,
+#projectFeatured {
   opacity: 0.5;
 }
 
 #projectOne:hover,
 #projectTwo:hover,
 #projectThree:hover,
-#projectFour:hover {
+#projectFour:hover,
+#projectFeatured:hover {
   transition: opacity 350ms 100ms cubic-bezier(0.075, 0.82, 0.165, 1);
   opacity: 1;
 }
