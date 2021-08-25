@@ -140,6 +140,12 @@ h4 {
   border: 1px solid rgb(218, 174, 117);
 }
 
+.orange-btn {
+  background-color: rgb(235, 161, 65);
+  border: 1px solid rgb(235, 161, 65);
+  font-family: "Averia Serif Libre", cursive;
+}
+
 /* Contact form section styles */
 
 #contactSubmit {
