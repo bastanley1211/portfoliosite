@@ -46,7 +46,91 @@
         </div>
     </header>
     <main class="container-fluid">
+        <div class="col-12 text-center" id="projects">
+            <h3 class="mt-2">Projects</h3>
+        </div>
+        <section class="row mt-3 mb-4 p-2 shadow" id="latestProjects">
+            <!--Project-->
+            <div class="col-12 col-md-6">
+                <a href="https://weather-snap.herokuapp.com/" target="_blank">
+                    <div class="card my-4 text-center project">
+                        <h5 class="card-title mx-auto my-2">
+                            WeatherSnap: a React weather app
+                        </h5>
+                        <img src="img/weathersnapscreenshot.png" class="img-fluid card-img-top"
+                            alt="Weather snap weather app" />
+                        <p class="card-body">
+                            Ongoing experiment to test and learn API technologies. Features cute, retro, nostalgic
+                            theme.
+                        </p>
 
+                    </div>
+                </a>
+            </div>
+            <!--Project-->
+            <div class="col-12 col-md-6">
+                <a href="https://www.downsizingresources.com" target="_blank">
+                    <div class="card my-4 text-center project">
+                        <h5 class="card-title mx-auto my-2">
+                            Downsizing Resources
+                        </h5>
+                        <img src="img/downsizingresourcesrebuild.png" class="img-fluid card-img-top"
+                            alt="Downsizing Resources Website" />
+                        <p class="card-body">
+                            Quick and simple Wordpress rebuild after the previous theme went obsolete due to updates...
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+            <!--Project-->
+            <div class="col-12 col-md-6">
+                <a href="https://www.bigislandmassagebysandy.com" target="_blank">
+                    <div class="card my-4 text-center project">
+                        <h5 class="card-title mx-auto my-2">
+                            Big Island Massage
+                        </h5>
+                        <img src="img/bigislandmassageredesign.png" class="img-fluid card-img-top"
+                            alt="Big Island Massage By Sandy Website" />
+                        <p class="card-body mt-3">
+                            A redesign and rebuild of a Wordpress website using the many resources WP has available...
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <!--Project-->
+            <div class="col-12 col-md-6">
+                <a href="https://bookkeepingthatsreliable.com" target="_blank">
+                    <div class="card my-4 project">
+                        <h5 class="card-title mx-auto text-center my-2">
+                            Bookkeeping That's Reliable, LLC Static Landing page
+                        </h5>
+                        <img src="img/btrsitestill.png" class="img-fluid card-img-top" height="150px"
+                            alt="Bookkeeping That's Reliable Website" />
+                        <p class="card-body">
+                            Built from scratch using Bootstrap framework, some JS, Jquery, and custom CSS to create this
+                            simple landing page that
+                            integrates a Hubspot form and Hubspot tracking. Kept it simple and hosted through Gitpages.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <a href="https://bastanley1211.github.io/gen_projects/shecodesproject.html" target="_blank">
+                    <div class="card my-4 project">
+                        <h5 class="card-title mx-auto text-center my-2">
+                            Pu-erh Info Site:
+                        </h5>
+                        <img src="img/shecodesproject.png" class="img-fluid card-img-top"
+                            alt="Information Website About Pu-erh Tea" />
+                        <p class="card-body">
+                            SheCodes HTML/CSS/JS Bootcamp Solo Project. Static website including HTML, CSS, and JS
+                            built from the ground up...
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
 
     </main>
     <!--Scroll to top button-->
@@ -121,6 +205,20 @@
         document.querySelector('.js-scroll-to-top').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('details').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        $(document).ready(function () {
+            $(".moreBox").slice(0, 3).show();
+            if ($(".blogBox:hidden").length != 0) {
+                $("#loadMore").show();
+            }
+            $("#loadMore").on('click', function (e) {
+                e.preventDefault();
+                $(".moreBox:hidden").slice(0, 6).slideDown();
+                if ($(".moreBox:hidden").length == 0) {
+                    $("#loadMore").fadeOut('slow');
+                }
+            });
         });
 
     </script>
