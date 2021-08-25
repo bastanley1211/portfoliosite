@@ -148,8 +148,8 @@ h4 {
 }
 
 .orange-btn:hover {
-  background-color: rgb(235, 161, 65);
-  border: 1px solid rgb(235, 161, 65);
+  background-color: rgba(235, 161, 65 0.7);
+  border: 1px solid rgba(235, 161, 65, 0.7);
   font-family: "Averia Serif Libre", cursive;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -161,6 +161,7 @@ h4 {
 
 .orange-btn a:hover {
   color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 /* Contact form section styles */
 
