@@ -25,9 +25,12 @@ h4 {
 }
 
 /* Header and Jumbotron */
+
+header {
+ margin-top: 35px; 
+}
 #header {
   background-image: linear-gradient(rgb(236, 181, 109), rgb(255, 255, 255));
-  margin-top: 35px;
   padding-top: 0px;
 }
 
